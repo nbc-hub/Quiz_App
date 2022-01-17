@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "439986400621",
+    "project_id": "ornekproje-cce3c",
+    "storage_bucket": "ornekproje-cce3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439986400621:android:bfc802a7f5c8c3e33cbe64",
+        "android_client_info": {
+          "package_name": "com.example.ornek_proje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439986400621-qhgt5nuera6c0d7sr9kulva4dk162urj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ornek_proje",
+            "certificate_hash": "db564212ca4e2c832966b0da6a4725e4df93a468"
+          }
+        },
+        {
+          "client_id": "439986400621-8im625sgi1j8opoqqt3qv9jolgaijo17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_9_Vbv0E8YlbQ6dmnDgKLV54gMXqq788"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439986400621-8im625sgi1j8opoqqt3qv9jolgaijo17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
