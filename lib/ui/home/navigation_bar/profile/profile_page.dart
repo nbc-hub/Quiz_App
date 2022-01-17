@@ -27,43 +27,55 @@ class _ProfilePageState extends State<ProfilePage> {
               children: [
                 const Text(
                   "",
-                  style: TextStyle(fontSize: 200),
+                  style: TextStyle(fontSize: 150),
                 ),
                 Text(
                   "UserID : " + viewModel.appRepository.appUser.userID,
-                  style: const TextStyle(fontSize: 32),
+                  style: const TextStyle(fontSize: 32, color: Colors.black),
+                ),
+                const Text(
+                  "",
+                  style: TextStyle(fontSize: 150),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 16),
                   child: Text(
-                    "Best Point : " +
+                    "En Yüksek Puanın : " +
                         viewModel.appRepository.appUser.bestPoint.toString(),
-                    style: const TextStyle(fontSize: 36),
+                    style: const TextStyle(fontSize: 36, color: Colors.black),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 16),
                   child: Text(
-                    "Culture Point : " +
+                    "En Yüksek Tarih Puanın : " +
+                        viewModel.appRepository.appUser.historyPoint.toString(),
+                    style: const TextStyle(fontSize: 36, color: Colors.black),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 16),
+                  child: Text(
+                    "En Yüksek Genel Kültür Puanın : " +
                         viewModel.appRepository.appUser.culturePoint.toString(),
-                    style: const TextStyle(fontSize: 36),
+                    style: const TextStyle(fontSize: 36, color: Colors.black),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 16),
                   child: Text(
-                    "Geography Point : " +
+                    "En Yüksek Çoğrafya Puanın : " +
                         viewModel.appRepository.appUser.geographyPoint
                             .toString(),
-                    style: const TextStyle(fontSize: 36),
+                    style: const TextStyle(fontSize: 36, color: Colors.black),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 16),
                   child: Text(
-                    "Music Point : " +
+                    "En Yüksek Müzik Puanın : " +
                         viewModel.appRepository.appUser.musicPoint.toString(),
-                    style: const TextStyle(fontSize: 36),
+                    style: const TextStyle(fontSize: 36, color: Colors.black),
                   ),
                 )
               ],

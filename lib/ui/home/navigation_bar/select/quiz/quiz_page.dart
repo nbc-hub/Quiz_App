@@ -93,13 +93,12 @@ class QuizPage extends StatelessWidget {
                                     onPressed: () {
                                       if (viewModel.code == "A") {
                                         if (viewModel.questionIndex == 5) {
-                                          viewModel.trueOption();
-                                          viewModel.isOver();
+                                          viewModel.isOver(true);
                                         } else {
                                           viewModel.trueOption();
                                         }
                                       } else {
-                                        viewModel.isOver();
+                                        viewModel.isOver(false);
                                       }
                                     },
                                     child: Text(
@@ -143,13 +142,12 @@ class QuizPage extends StatelessWidget {
                                     onPressed: () {
                                       if (viewModel.code == "B") {
                                         if (viewModel.questionIndex == 5) {
-                                          viewModel.trueOption();
-                                          viewModel.isOver();
+                                          viewModel.isOver(true);
                                         } else {
                                           viewModel.trueOption();
                                         }
                                       } else {
-                                        viewModel.isOver();
+                                        viewModel.isOver(false);
                                       }
                                     },
                                     child: Text(
@@ -193,13 +191,12 @@ class QuizPage extends StatelessWidget {
                                     onPressed: () {
                                       if (viewModel.code == "C") {
                                         if (viewModel.questionIndex == 5) {
-                                          viewModel.trueOption();
-                                          viewModel.isOver();
+                                          viewModel.isOver(true);
                                         } else {
                                           viewModel.trueOption();
                                         }
                                       } else {
-                                        viewModel.isOver();
+                                        viewModel.isOver(false);
                                       }
                                     },
                                     child: Text(
@@ -243,13 +240,12 @@ class QuizPage extends StatelessWidget {
                                     onPressed: () {
                                       if (viewModel.code == "D") {
                                         if (viewModel.questionIndex == 5) {
-                                          viewModel.trueOption();
-                                          viewModel.isOver();
+                                          viewModel.isOver(true);
                                         } else {
                                           viewModel.trueOption();
                                         }
                                       } else {
-                                        viewModel.isOver();
+                                        viewModel.isOver(false);
                                       }
                                     },
                                     child: Text(

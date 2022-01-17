@@ -83,9 +83,7 @@ class QuizViewModel extends BaseViewModel {
   }
 
   Future<void> trueOption() async {
-    if (questionIndex != 5) {
-      questionIndex++;
-    }
+    questionIndex++;
     currentPoint += 20;
     final value = await PlatformResponsiveAlertDialog(
       title: "Tebrikler",
@@ -94,9 +92,7 @@ class QuizViewModel extends BaseViewModel {
     ).showPlatformDialog(context);
 
     if (value) {
-      if (questionIndex != 5) {
-        questionRead();
-      }
+      questionRead();
     }
   }
 
@@ -113,7 +109,10 @@ class QuizViewModel extends BaseViewModel {
     }
   }
 
-  Future<void> isOver() async {
+  Future<void> isOver(bool lastQuestion) async {
+    if (lastQuestion) {
+      currentPoint += 20;
+    }
     if (appRepository.appUser.bestPoint < currentPoint) {
       await appRepository.updateBestPoint(currentPoint);
     }
@@ -134,14 +133,28 @@ class QuizViewModel extends BaseViewModel {
         await appRepository.updateCategoryPoint(categoryName, currentPoint);
       }
     }
-    final value = await PlatformResponsiveAlertDialog(
-      title: "Yarışma Sona Erdi",
-      content: "Puanınız $currentPoint",
-      mainButtonText: "Yarışmadan Ayrıl",
-    ).showPlatformDialog(context);
 
-    if (value) {
-      navigationService.pushNamedAndRemoveUntil(RouteConstant.HOME_PAGE_ROUTE);
+    if (lastQuestion) {
+      final value = await PlatformResponsiveAlertDialog(
+        title: "Tebrikler.",
+        content: "Bütün Soruları Doğru Cevapladınız.Puanınız $currentPoint",
+        mainButtonText: "Yarışmadan Ayrıl",
+      ).showPlatformDialog(context);
+      if (value) {
+        navigationService
+            .pushNamedAndRemoveUntil(RouteConstant.HOME_PAGE_ROUTE);
+      }
+    } else {
+      final value = await PlatformResponsiveAlertDialog(
+        title: "Yanlış Cevap",
+        content: "Puanınız $currentPoint",
+        mainButtonText: "Yarışmadan Ayrıl",
+      ).showPlatformDialog(context);
+
+      if (value) {
+        navigationService
+            .pushNamedAndRemoveUntil(RouteConstant.HOME_PAGE_ROUTE);
+      }
     }
   }
 }
