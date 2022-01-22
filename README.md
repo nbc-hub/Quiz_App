@@ -1,6 +1,6 @@
 # Quiz_App
  Quiz App
 
-![screenshot-2022-01-18_04 17 12 364](https://user-images.githubusercontent.com/74993460/150637441-71cc42df-e36b-4567-a52e-504dce1026a6.png)
-![screenshot-2022-01-18_04 12 21 664](https://user-images.githubusercontent.com/74993460/150637453-d28f071c-bd85-42be-9ef9-a0340f289742.png)
-![screenshot-2022-01-18_04 12 12 646](https://user-images.githubusercontent.com/74993460/150637456-4011bd94-e590-402c-82a3-3fb08166b8ef.png)
+![QuizAppSelect](https://user-images.githubusercontent.com/74993460/150637827-9517ab24-24cd-46dd-80e0-5ec14bcfed1b.png)
+![QuizAppQuiz](https://user-images.githubusercontent.com/74993460/150637830-fe5ca2f6-a84d-4445-b40a-fb34f305b6ec.png)
+![QuizAppProfile](https://user-images.githubusercontent.com/74993460/150637833-99d763ff-b7cd-45b1-b43c-7b1d55358f40.png)
